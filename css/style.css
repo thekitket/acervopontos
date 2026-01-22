@@ -64,7 +64,7 @@ nav.menu a::before {
   font-size: 1.2rem;
 }
 
-/* Gradientes individuais por botão */
+/* Gradientes individuais por botão do menu */
 nav.menu a:nth-child(1) { background: linear-gradient(145deg, #0f3d2e, #17684c); }
 nav.menu a:nth-child(2) { background: linear-gradient(145deg, #134d39, #1b6f52); }
 nav.menu a:nth-child(3) { background: linear-gradient(145deg, #0e5c44, #1c8562); }
@@ -101,7 +101,7 @@ nav.menu a:hover {
 }
 
 /* -------------------------------
-   ENTIDADES MODERNIZADAS
+   ENTIDADES MODERNIZADAS - BOTÕES MARRONS
 ---------------------------------*/
 .entidade {
   margin-bottom: 15px;
@@ -112,8 +112,8 @@ nav.menu a:hover {
   font-size: 18px;
   margin: 0;
   padding: 12px 20px;
-  background: linear-gradient(145deg, #f0f7f4, #e0ece7);
-  border-left: 5px solid #0f3d2e;
+  background: linear-gradient(145deg, #e6d5c0, #d4b89e); /* marrom */
+  border-left: 5px solid #8b5e3c; /* borda escura */
   border-radius: 12px;
   cursor: pointer;
   text-align: left;
@@ -125,7 +125,7 @@ nav.menu a:hover {
 }
 
 .entidade h3:hover {
-  background: linear-gradient(145deg, #d9f0e2, #c5e7d7);
+  background: linear-gradient(145deg, #d4b89e, #c79a7d);
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
