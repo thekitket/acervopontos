@@ -27,7 +27,7 @@ body {
   margin-top: 8px;
   white-space: pre-wrap;
   line-height: 1.5;
-  color: #5b3e2b;
+  color: #1A684D;
   transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
@@ -176,7 +176,7 @@ nav.menu a:hover {
   content: '▼';
   font-size: 14px;
   transition: transform 0.3s ease;
-  color: #5b3e2b;
+  color: #5A9C86;
 }
 
 .entidade.active h3::after {
@@ -224,7 +224,7 @@ nav.menu a:hover {
   margin-bottom: 5px;
   font-size: 16px;
   text-align: left;
-  color: #5b3e2b;
+  color: #1A684D;
 }
 
 /* -------------------------------
@@ -239,7 +239,7 @@ nav.menu a:hover {
   margin-top: 8px;
   white-space: pre-wrap;
   line-height: 1.5;
-  color: #5b3e2b;
+  color: #5A9C86;
   transition: max-height 0.4s ease, opacity 0.4s ease;
   max-height: 0;
   overflow: hidden;
