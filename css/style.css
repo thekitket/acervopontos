@@ -152,9 +152,9 @@ nav.menu a:hover {
 .entidade h3 {
   font-weight: 600;
   font-size: 18px;
-  margin: 0;
+  margin: 0; 
   padding: 12px 20px;
-  background: linear-gradient(145deg, #f2e6d9, #d4b89e); /* marrom suave */
+  background: linear-gradient(145deg, ##7cbba6, #d4b89e); /* marrom suave */
   border-left: 5px solid #175A43; /* borda escura */
   border-radius: 12px;
   cursor: pointer;
