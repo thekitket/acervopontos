@@ -37,6 +37,40 @@ renderAcervo(acervoExu,"conteudo");
     });
   });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const entidades = document.querySelectorAll('.entidade');
+
+  entidades.forEach(entidade => {
+    const titulo = entidade.querySelector('h3');
+    const pontos = entidade.querySelector('.pontos');
+
+    // Inicialmente esconde os pontos
+    pontos.style.display = "none";
+    pontos.style.maxHeight = "0";
+    pontos.style.opacity = "0";
+    pontos.style.overflow = "hidden";
+
+    titulo.addEventListener('click', () => {
+      const isVisible = pontos.style.display === "block";
+
+      if (isVisible) {
+        // Esconder
+        pontos.style.maxHeight = "0";
+        pontos.style.opacity = "0";
+        setTimeout(() => { pontos.style.display = "none"; }, 300);
+      } else {
+        // Mostrar
+        pontos.style.display = "block";
+        setTimeout(() => { pontos.style.maxHeight = "1000px"; pontos.style.opacity = "1"; }, 10);
+      }
+
+      // Alterna a classe active no título para o ícone ▼
+      entidade.classList.toggle('active');
+    });
+  });
+});
+</script>
 
 </body>
 </html>
