@@ -96,8 +96,32 @@ const acervoJurema = [
       
     ]
   },
-  { 
-  nome: "Ciganos",
+  
+  { nome: "Caboclas",
+    entidades: [
+      { nome: "Cabocla Iracema", pontos: [
+          {titulo:"Ponto 01", audio:"audios/jurema/caboclas/XXXXXXXX", letra:"Letra do ponto..."},
+          {titulo:"Ponto 02", audio:"audios/jurema/caboclas/XXXXXXXX", letra:"Letra do ponto..."},
+      ] },
+      { nome: "Cabocla Jurema", pontos: [
+          {titulo:"Ponto 01", audio:"audios/jurema/caboclas/XXXXXXXX", letra:"Letra do ponto..."},
+          {titulo:"Ponto 02", audio:"audios/jurema/caboclas/XXXXXXXX", letra:"Letra do ponto..."},
+      ] },
+      { nome: "Cabocla Iara", pontos: [
+          {titulo:"Ponto 01", audio:"audios/jurema/caboclas/XXXXXXXX", letra:"Letra do ponto..."},
+          {titulo:"Ponto 02", audio:"audios/jurema/caboclas/XXXXXXXX", letra:"Letra do ponto..."},
+      ] },
+      { nome: "Cabocla Roxa", pontos: [
+          {titulo:"Ponto 01", audio:"audios/jurema/caboclas/XXXXXXXX", letra:"Letra do ponto..."},
+          {titulo:"Ponto 02", audio:"audios/jurema/caboclas/XXXXXXXX", letra:"Letra do ponto..."},
+      ] },
+      { nome: "Caboclo Itacuira", pontos: [
+          {titulo:"Ponto 01", audio:"audios/jurema/caboclas/XXXXXXXX", letra:"Letra do ponto..."},
+          {titulo:"Ponto 02", audio:"audios/jurema/caboclas/XXXXXXXX", letra:"Letra do ponto..."},
+      ] },
+    ]
+  },
+  { nome: "Ciganos",
   entidades: [
     { 
       nome: "Pedro Cigano", 
