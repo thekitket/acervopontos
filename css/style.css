@@ -30,53 +30,49 @@ h1 {
 }
 
 /* -------------------------------
-   MENU COM GRADIENTE POR ACERVO
+   MENU COM EMOJI E FUNDO VERDE
 ---------------------------------*/
 nav.menu {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+  background: #0f3d2e; /* verde escuro */
   padding: 0.8rem 1rem;
   position: sticky;
   top: 1rem;
   z-index: 10;
-}
-
-/* Gradientes individuais para cada link */
-nav.menu a:nth-child(1) { /* exemplo: Jurema */
-  background: linear-gradient(135deg, #3a2f26, #5c4b3a);
-  color: #fff;
-}
-nav.menu a:nth-child(2) { /* exemplo: Exu */
-  background: linear-gradient(135deg, #7a1f0a, #c1440e);
-  color: #fff;
-}
-nav.menu a:nth-child(3) { /* exemplo: Pombagira */
-  background: linear-gradient(135deg, #5b0d4a, #a4377b);
-  color: #fff;
-}
-nav.menu a:nth-child(4) { /* exemplo: Caboclo */
-  background: linear-gradient(135deg, #006442, #00a86b);
-  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
 nav.menu a {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.5rem;
   font-weight: 600;
   font-size: 1rem;
+  color: #fff;
   text-decoration: none;
-  padding: 0.5rem 1.2rem;
+  padding: 0.6rem 1.4rem;
   border-radius: 10px;
+  background: linear-gradient(135deg, #14503d, #0f3d2e); /* leve gradiente */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
+  position: relative;
 }
 
-/* Hover uniforme para todos os links */
+/* Ícone de pasta antes do texto */
+nav.menu a::before {
+  content: '📁';
+  font-size: 1.1rem;
+}
+
+/* Hover moderno */
 nav.menu a:hover {
+  background: linear-gradient(135deg, #1a664d, #0f4c37);
   transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
   color: #a1d9b1;
 }
 
