@@ -11,6 +11,9 @@ nav.menu {
   gap: 40px;
   background: #0f3d2e;
   padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 nav.menu a {
@@ -25,7 +28,7 @@ nav.menu a:hover {
 }
 
 .main-content {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 30px auto;
   padding: 0 20px;
 }
@@ -38,57 +41,69 @@ h1 {
 .search-box {
   display: block;
   width: 100%;
-  padding: 10px 12px;
+  padding: 12px 15px;
   font-size: 16px;
   margin-bottom: 30px;
   border: 2px solid #0f3d2e;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
-/* LINHAS E ENTIDADES */
+/* CARD LINHAS */
 .linha {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  border: 2px solid #0f3d2e;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
 
 .linha h2 {
   font-weight: bold;
   font-size: 22px;
-  border-bottom: 3px solid #0f3d2e;
-  padding-bottom: 6px;
+  margin-bottom: 15px;
+  color: #0f3d2e;
+}
+
+/* ENTIDADES */
+.entidade {
   margin-bottom: 15px;
 }
 
 .entidade h3 {
-  background: #e6f0ec;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
   padding: 10px 15px;
+  background: #e6f0ec;
   border-left: 5px solid #0f3d2e;
   cursor: pointer;
-  font-weight: bold;
-  margin: 0;
+  border-radius: 5px;
 }
 
 .pontos {
   display: none;
-  padding: 10px 20px;
-  border-left: 2px solid #0f3d2e;
+  margin-top: 8px;
+  padding: 10px 15px;
   background: #f9fdfc;
+  border-left: 3px solid #0f3d2e;
   border-radius: 0 5px 5px 0;
 }
 
 .ponto {
   margin-bottom: 20px;
+  padding: 8px 10px;
+  border-bottom: 1px solid #ccc;
 }
 
 .ponto strong {
   display: block;
-  font-size: 16px;
   margin-bottom: 5px;
+  font-size: 16px;
 }
 
 audio {
-  display: block;
-  margin-bottom: 8px;
   width: 100%;
+  margin-bottom: 5px;
 }
 
 button {
@@ -106,10 +121,10 @@ button:hover {
 
 .letra {
   display: none;
-  margin-top: 10px;
-  white-space: pre-line;
-  line-height: 1.6;
-  background: #f0f7f4;
+  margin-top: 8px;
   padding: 8px 12px;
   border-radius: 5px;
+  background: #f0f7f4;
+  white-space: pre-line;
+  line-height: 1.5;
 }
