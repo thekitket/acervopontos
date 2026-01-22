@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Acervo de Pontos - Jurema</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="menu">
+  <a href="index.html">Início</a>
+  <a href="jurema.html">Jurema</a>
+  <a href="exu.html">Exu / Pombo Gira</a>
+</nav>
+
+<div class="main-content">
+  <h1>Acervo de Pontos - Jurema</h1>
+  <input type="text" id="search" class="search-box" placeholder="Buscar ponto..." onkeyup="searchPontos()">
+  <div id="conteudo"></div>
+</div>
+
+<script src="data/jurema.js"></script>
+<script src="js/script.js"></script>
+<script>
+renderAcervo(acervoJurema,"conteudo");
+</script>
+
+</body>
+</html>
