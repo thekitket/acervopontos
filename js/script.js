@@ -12,6 +12,19 @@ function toggleEntidade(id) {
   if (!pontos) return;
   pontos.classList.toggle("active"); // ativa/desativa animação do container de pontos
 }
+// dentro do forEach dos pontos
+const pontoDiv = document.createElement("div");
+pontoDiv.className = "ponto";
+pontoDiv.innerHTML = `
+  <strong>${ponto.titulo}</strong>
+  <audio controls>
+    <source src="${ponto.audio}.mp3" type="audio/mpeg">
+    <source src="${ponto.audio}.ogg" type="audio/ogg">
+    Seu navegador não suporta áudio.
+  </audio>
+  <button class="letra-btn" onclick="toggleLetra('${letraId}')">Ver letra</button>
+  <div class="letra" id="${letraId}">${ponto.letra}</div>
+`;
 
 // -------------------------------
 // RENDERIZAÇÃO DO ACERVO
