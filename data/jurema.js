@@ -92,17 +92,28 @@ const acervoJurema = [
       { nome: "Caboclo Sete Flecha", pontos: [
           {titulo:"Ponto 01", audio:"audios/jurema/caboclos/XXXXXXXX", letra:"Letra do ponto..."},
           {titulo:"Ponto 02", audio:"audios/jurema/caboclos/XXXXXXXX", letra:"Letra do ponto..."},
-      ] }
+      ] },
+      
     ]
   },
-  { nome: "Ciganos",
-   entidades: [
-    { nome: "Pedro Cigano", pontos: [
-          {titulo:"Ponto 01", audio:"audios/jurema/ciganos/01-ciganos-pedro-cigano", letra:"Letra do ponto..."},
-          {titulo:"Ponto 02", audio:"audios/jurema/ciganos/XXXXXXXXX", letra:"Letra do ponto..."},
-  ] }
-    ]
-  },
+  { 
+  nome: "Ciganos",
+  entidades: [
+    { 
+      nome: "Pedro Cigano", 
+      pontos: [
+        {titulo:"Ponto 01", audio:"audios/jurema/ciganos/01-ciganos-pedro-cigano", letra:"Letra do ponto..."}
+      ] 
+    },
+    { 
+      nome: "Ciganos / Caravana", 
+      pontos: [
+        {titulo:"Que bando é Esse", audio:"audios/jurema/ciganos/que-bando-é-esse", letra:"Letra do ponto..."},
+        {titulo:"Ponto 02", audio:"audios/jurema/ciganos/XXXXXXXX", letra:"Letra do ponto..."}
+      ] 
+    }
+  ]
+},
   { nome: "Pretos Velhos", entidades: [] },
   { nome: "Pontos de Mesa", entidades: [] },
   { nome: "Malunguinho", entidades: [] }
