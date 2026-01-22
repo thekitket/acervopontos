@@ -126,7 +126,7 @@ const acervoJurema = [
     { 
       nome: "Pedro Cigano", 
       pontos: [
-        {titulo:"Ponto 01", audio:"audios/jurema/ciganos/01-ciganos-pedro-cigano", letra:"Letra do ponto..."}
+        {titulo:"Olha o sino da serra...", audio:"audios/jurema/ciganos/01-ciganos-pedro-cigano", letra:"Olha o sino da serra como vem brandando (2x) / Olha Pedro Cigano ai vem chegando (2x) / Olha o Sino da serra como debrandou (2x) / Olha Pedro Cigano Mestre curador (2x)"}
       ] 
     },
     { 
