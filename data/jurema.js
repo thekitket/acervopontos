@@ -2,7 +2,7 @@ const acervoJurema = [
   {
     nome: "Mestres",
     entidades: [
-      { nome: "Mestre Antõnio Pelintra", pontos: [
+      { nome: "Mestre Antônio Pelintra", pontos: [
           {titulo:"Ponto 01", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
           {titulo:"Ponto 02", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
       ] },
