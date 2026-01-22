@@ -4,7 +4,7 @@
 function toggleLetra(id) {
   const letra = document.getElementById(id);
   if (!letra) return;
-  letra.classList.toggle("desactive"); // controla exibição via CSS
+  letra.classList.toggle("active"); // controla exibição via CSS
 }
 
 function toggleEntidade(id) {
