@@ -20,7 +20,7 @@ body {
 }
 .letra {
   display: none;      /* inicialmente oculta */
-  background: #fdf0e0; /* tom suave */
+  background: #4c9079; /* tom suave */
   border-left: 3px solid #175A43;
   border-radius: 6px;
   padding: 10px;
