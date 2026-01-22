@@ -11,7 +11,7 @@ const acervoJurema = [
           {titulo:"Ponto 02", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
       ] },
       { nome: "Mestre Manoel de Almeida", pontos: [
-          {titulo:"Ponto 01", audio:"audios/jurema/mestre/01-mestre-manoel-de-almeida", letra:"Seu Manoel de Almeida, vamos trabalhar. / Que eu Cheguei Agora, vamos trabalhar / Com um pé na mesa, vamos trabalhar / E outro de fora, vamos trabalhar."},
+          {titulo:"Ponto 01 - Vamos trablhar...", audio:"audios/jurema/mestre/01-mestre-manoel-de-almeida", letra:"Seu Manoel de Almeida, vamos trabalhar. / Que eu Cheguei Agora, vamos trabalhar / Com um pé na mesa, vamos trabalhar / E outro de fora, vamos trabalhar."},
       ] },
       { nome: "Mestre Manoel da Serra", pontos: [
           {titulo:"Ponto 01", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
