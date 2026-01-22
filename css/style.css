@@ -18,6 +18,25 @@ body {
   text-align: center;
   transition: background 0.3s, color 0.3s;
 }
+.letra {
+  display: none;      /* inicialmente oculta */
+  background: #fdf0e0; /* tom suave */
+  border-left: 3px solid #8b5e3c;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 8px;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  color: #5b3e2b;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.letra.active {
+  display: block;
+  opacity: 1;
+  max-height: 1000px;
+}
+
 /* botão de letra */
 button.letra-btn {
   background: #8b5e3c;  /* marrom */
