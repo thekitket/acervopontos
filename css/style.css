@@ -21,7 +21,7 @@ body {
 .letra {
   display: none;      /* inicialmente oculta */
   background: #fdf0e0; /* tom suave */
-  border-left: 3px solid #8b5e3c;
+  border-left: 3px solid #175A43;
   border-radius: 6px;
   padding: 10px;
   margin-top: 8px;
@@ -39,7 +39,7 @@ body {
 
 /* botão de letra */
 button.letra-btn {
-  background: #8b5e3c;  /* marrom */
+  background: #175A43;  /* marrom */
   color: #fff;
   border: none;
   padding: 6px 12px;
@@ -123,7 +123,7 @@ nav.menu a:hover {
 ---------------------------------*/
 .linha {
   margin-bottom: 25px;
-  border: 2px solid #8b5e3c;
+  border: 2px solid #175A43;
   border-radius: 10px;
   padding: 15px;
   box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
@@ -139,7 +139,7 @@ nav.menu a:hover {
   font-weight: bold;
   font-size: 22px;
   margin-bottom: 15px;
-  color: #8b5e3c;
+  color: #175A43;
 }
 
 /* -------------------------------
@@ -155,7 +155,7 @@ nav.menu a:hover {
   margin: 0;
   padding: 12px 20px;
   background: linear-gradient(145deg, #f2e6d9, #d4b89e); /* marrom suave */
-  border-left: 5px solid #8b5e3c; /* borda escura */
+  border-left: 5px solid #175A43; /* borda escura */
   border-radius: 12px;
   cursor: pointer;
   text-align: left;
@@ -193,7 +193,7 @@ nav.menu a:hover {
   overflow: hidden;
   transition: all 0.5s ease;
   background: #f9f5f0;
-  border-left: 3px solid #8b5e3c;
+  border-left: 3px solid #175A43;
   border-radius: 0 0 12px 12px;
   padding: 10px 15px;
 }
@@ -233,7 +233,7 @@ nav.menu a:hover {
 .letra {
   display: none; /* inicialmente oculta */
   background: #fdf0e0;
-  border-left: 3px solid #8b5e3c;
+  border-left: 3px solid #175A43;
   border-radius: 6px;
   padding: 10px;
   margin-top: 8px;
@@ -279,7 +279,7 @@ audio {
    BUTTONS (áudio / ver letra)
 ---------------------------------*/
 button {
-  background: #8b5e3c;
+  background: #175A43;
   color: #fff;
   border: none;
   padding: 6px 12px;
