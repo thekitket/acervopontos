@@ -9,15 +9,20 @@ const acervoJurema = [
           {titulo:"Outro Ponto", audio:"assets/audio/jurema/mestres/outro", letra:"Letra do outro ponto..."}
           {titulo:"Outro Ponto", audio:"assets/audio/jurema/mestres/outro", letra:"Letra do outro ponto..."}
         ] 
-          nome: "Mestre Quebra Pedra",
-        pontos: [
-          {titulo:"Do Pina...", audio:"audios/jurema/mestre/01-mestre-ze-pelintra", letra:"Chapéu amarelo que vem do Pará..."},
-          {titulo:"Outro Ponto", audio:"assets/audio/jurema/mestres/outro", letra:"Letra do outro ponto..."}
-          {titulo:"Outro Ponto", audio:"assets/audio/jurema/mestres/outro", letra:"Letra do outro ponto..."}
       }
      
     ]
     
+  },
+  {
+        nome: "Mestre Quebra Pedra",
+        pontos: [
+          {titulo:"Do Pina...", audio:"audios/jurema/mestre/01-mestre-ze-pelintra", letra:"Chapéu amarelo que vem do Pará..."},
+          {titulo:"Outro Ponto", audio:"assets/audio/jurema/mestres/outro", letra:"Letra do outro ponto..."}
+          {titulo:"Outro Ponto", audio:"assets/audio/jurema/mestres/outro", letra:"Letra do outro ponto..."}
+               ] 
+      }     
+    ]
   },
   {
     nome: "Caboclos",
