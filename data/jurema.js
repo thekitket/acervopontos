@@ -48,7 +48,7 @@ const acervoJurema = [
       {
         nome: "Mestre Zé Pelintra",
         pontos: [
-          {titulo:"Chapéu Amarelo...", audio:"audios/jurema/mestre/01-mestre-ze-pelintra", letra: "Chapéu amarelo que vem do Pará (2x) / Seu Zé vem Triunfando na mesa real"},
+          {titulo:"Chapéu Amarelo...", audio:"audios/jurema/mestre/01-mestre-ze-pelintra", letra: "Chapéu amarelo que vem do Pará (2x) / Seu Zé vem Triunfando na mesa real (2x) / Zé Pelintra, Zé Pelintra de Santana Ê (2x) / Deus lhe deu maior poder da maior força que tem (2x)"},
           {titulo:"Ponto 02", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
            ]
       },
