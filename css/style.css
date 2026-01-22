@@ -30,84 +30,109 @@ h1 {
 }
 
 /* -------------------------------
-   MENU “BOTÕES DE ACERVO”
+   MENU COM EMOJIS
 ---------------------------------*/
 nav.menu {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 2rem;
+  background: #3a2f26;
+  padding: 0.8rem 1rem;
   position: sticky;
   top: 1rem;
   z-index: 10;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
 
 nav.menu a {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   font-weight: 600;
   font-size: 1rem;
   color: #fff;
   text-decoration: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 10px;
-  background: linear-gradient(145deg, #3a2f26, #5c4b3a);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
   transition: all 0.3s ease;
   position: relative;
 }
 
-/* Emoji ou ícone discreto */
-nav.menu a::before {
-  content: '📁'; /* pode ser trocado por outro emoji representativo */
-  font-size: 1.1rem;
-}
-
-/* hover sofisticado */
+/* Hover moderno */
 nav.menu a:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
   background: linear-gradient(145deg, #5c4b3a, #7a6650);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   color: #a1d9b1;
 }
 
 /* -------------------------------
-   CONTEÚDO PRINCIPAL
+   CARDS / LINHAS
 ---------------------------------*/
-.main-content, main {
-  margin-top: 2rem;
+.linha {
+  margin-bottom: 25px;
+  border: 2px solid #0f3d2e;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
 
-section {
-  margin-bottom: 3rem;
-}
-
-p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-top: 1.2rem;
-  color: #333;
+.linha h2 {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #0f3d2e;
 }
 
 /* -------------------------------
-   LISTAS ESTILIZADAS
+   ENTIDADES
 ---------------------------------*/
-li {
-  font-size: 1rem;
-  background: #fffaf0;
-  padding: 0.8rem 1rem;
-  margin: 0.5rem 0;
-  border-left: 5px solid #6b4c3b;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
+.entidade {
+  margin-bottom: 15px;
 }
 
-li:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+.entidade h3 {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  padding: 10px 15px;
+  background: #e6f0ec;
+  border-left: 5px solid #0f3d2e;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pontos {
+  display: none;
+  margin-top: 8px;
+  padding: 10px 15px;
+  background: #f9fdfc;
+  border-left: 3px solid #0f3d2e;
+  border-radius: 0 5px 5px 0;
+}
+
+.ponto {
+  margin-bottom: 20px;
+  padding: 8px 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.ponto strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.letra {
+  display: none;
+  margin-top: 8px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background: #f0f7f4;
+  white-space: pre-line;
+  line-height: 1.5;
 }
 
 /* -------------------------------
@@ -159,5 +184,5 @@ button:hover {
   h1 { font-size: 2.2rem; }
   nav.menu { flex-direction: column; gap: 0.8rem; }
   nav.menu a { font-size: 0.95rem; padding: 0.6rem 1rem; justify-content: center; }
-  li { font-size: 0.95rem; padding: 0.6rem 1rem; }
+  li, .ponto { font-size: 0.95rem; padding: 0.6rem 1rem; }
 }
