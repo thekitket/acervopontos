@@ -144,13 +144,23 @@ const acervoJurema = [
     { 
       nome: "Ciganos / Caravana", 
       pontos: [
-        {titulo:"Que bando é Esse", audio:"audios/jurema/ciganos/que-bando-é-esse", letra:"Letra do ponto..."},
+        {titulo:"Que bando é Esse", audio:"audios/jurema/ciganos/Que-bando-é-esse", letra:"Que bando é esse? É um bando de Cigano (2x) / Caravana, Caravana, Caravana de Cigano (2x)"},
         {titulo:"Ponto 02", audio:"audios/jurema/ciganos/XXXXXXXX", letra:"Letra do ponto..."}
       ] 
     }
   ]
 },
-  { nome: "Pretos Velhos", entidades: [] },
+ { 
+  nome: "Pretos Velhos", 
+  entidades: [
+    { 
+      nome: "Preto de Minas", 
+      pontos: [
+        {titulo:"Preto de Minas que vem lá de cima...", audio:"audios/jurema/preto velho/preto-de-minas", letra:"Leiam o Ponto"}
+      ] 
+    }
+  ]
+},
   { nome: "Pontos de Mesa", entidades: [] },
   { nome: "Malunguinho", entidades: [] }
 ];
