@@ -4,33 +4,13 @@
 function toggleLetra(id) {
   const letra = document.getElementById(id);
   if (!letra) return;
-
-  if (letra.style.maxHeight && letra.style.maxHeight !== "0px") {
-    // fecha
-    letra.style.maxHeight = "0";
-    letra.style.opacity = "0";
-  } else {
-    // abre com altura automática
-    letra.style.maxHeight = letra.scrollHeight + "px";
-    letra.style.opacity = "1";
-  }
+  letra.classList.toggle("active");
 }
 
 function toggleEntidade(id) {
   const pontos = document.getElementById(id);
   if (!pontos) return;
-
-  if (pontos.style.display === "block") {
-    pontos.style.maxHeight = "0";
-    pontos.style.opacity = "0";
-    setTimeout(() => { pontos.style.display = "none"; }, 300);
-  } else {
-    pontos.style.display = "block";
-    setTimeout(() => {
-      pontos.style.maxHeight = pontos.scrollHeight + "px";
-      pontos.style.opacity = "1";
-    }, 10);
-  }
+  pontos.classList.toggle("active");
 }
 
 // -------------------------------
@@ -47,7 +27,15 @@ function renderAcervo(acervo, containerId) {
     sec.className = "linha";
     sec.innerHTML = `<h2>${linha.nome}</h2>`;
 
-    linha.entidades.forEach((entidade, entIdx) => {
+    // Ordena apenas para renderização (sem mudar o array original)
+    const entidadesOrdenadas = [...linha.entidades].sort((a, b) =>
+      a.nome.localeCompare(b.nome, 'pt', { sensitivity: 'base' })
+    );
+
+    entidadesOrdenadas.forEach((entidade) => {
+      // Busca o índice original da entidade no array do data
+      const entIdx = linha.entidades.indexOf(entidade);
+
       const div = document.createElement("div");
       div.className = "entidade";
 
@@ -70,7 +58,7 @@ function renderAcervo(acervo, containerId) {
             Seu navegador não suporta áudio.
           </audio>
           <button onclick="toggleLetra('${letraId}')">Ver letra</button>
-          <div class="letra" id="${letraId}" style="max-height:0; overflow:hidden; opacity:0; transition: all 0.3s ease;">${ponto.letra}</div>
+          <div class="letra" id="${letraId}">${ponto.letra}</div>
         `;
         pontosContainer.appendChild(pontoDiv);
       });
