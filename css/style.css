@@ -235,6 +235,18 @@ button {
 button:hover {
   background: #14503d;
 }
+.pontos {
+  display: none;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.5s ease;
+}
+
+.pontos.active {
+  display: block;
+  opacity: 1;
+  max-height: 1000px;
+}
 
 /* -------------------------------
    RESPONSIVO
