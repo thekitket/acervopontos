@@ -69,4 +69,6 @@ function searchPontos(){
       pontos.classList.toggle('active');
     });
   });
+<script src="script.js"></script>
+
 </script>
