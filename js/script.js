@@ -2,29 +2,15 @@
 // FUNÇÕES DE TOGGLE
 // -------------------------------
 function toggleLetra(id) {
-  const l = document.getElementById(id);
-  if (!l) return;
-
-  const isVisible = l.style.display === "block";
-  l.style.display = isVisible ? "none" : "block";
+  const letra = document.getElementById(id);
+  if (!letra) return;
+  letra.classList.toggle("active"); // controla exibição via CSS
 }
 
 function toggleEntidade(id) {
-  const e = document.getElementById(id);
-  if (!e) return;
-
-  e.classList.toggle("active");
-}
-function toggleLetra(id) {
-  const l = document.getElementById(id);
-  if (!l) return;
-
-  const isVisible = l.style.display === "block";
-  if (isVisible) {
-    l.style.display = "none";
-  } else {
-    l.style.display = "block";
-  }
+  const pontos = document.getElementById(id);
+  if (!pontos) return;
+  pontos.classList.toggle("active"); // ativa/desativa animação do container de pontos
 }
 
 // -------------------------------
@@ -69,7 +55,7 @@ function renderAcervo(acervo, containerId) {
         pontosContainer.appendChild(pontoDiv);
       });
 
-      // Evento para mostrar/ocultar pontos
+      // Evento para mostrar/ocultar pontos ao clicar no título da entidade
       const titulo = div.querySelector("h3");
       titulo.addEventListener("click", () => toggleEntidade(pontosId));
 
