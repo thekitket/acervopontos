@@ -5,7 +5,7 @@ const acervoJurema = [
       {
         nome: "Mestre Zé Pelintra",
         pontos: [
-          {titulo:"Chapéu Amarelo", audio:"assets/audio/jurema/mestres/chapeu-amarelo", letra:"Chapéu amarelo que vem do Pará..."},
+          {titulo:"Chapéu Amarelo", audio:"audios/jurema/mestre/01-mestre-ze-pelintra", letra:"Chapéu amarelo que vem do Pará..."},
           {titulo:"Outro Ponto", audio:"assets/audio/jurema/mestres/outro", letra:"Letra do outro ponto..."}
         ]
       }
