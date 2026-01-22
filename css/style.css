@@ -10,51 +10,64 @@
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0 auto;
-  padding: 2rem;
+  padding: clamp(1rem, 2vw, 2rem);
   max-width: 960px;
   background: #fdfaf6;
   color: #222;
   line-height: 1.7;
   text-align: center;
   transition: background 0.3s, color 0.3s;
+  font-size: clamp(14px, 1.5vw, 18px);
 }
+
+/* -------------------------------
+   LETRAS DE PONTOS
+---------------------------------*/
 .letra {
-  display: none;      /* inicialmente oculta */
-  background: #aef4dd; /* tom suave */
+  display: none;
+  background: #fdf0e0;
   border-left: 3px solid #175A43;
   border-radius: 6px;
-  padding: 10px;
-  margin-top: 8px;
+  padding: clamp(0.5rem, 1vw, 1rem);
+  margin-top: 0.5rem;
   white-space: pre-wrap;
   line-height: 1.5;
-  color: #1A684D;
-  transition: max-height 0.3s ease, opacity 0.3s ease;
+  color: #5b3e2b;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  max-height: 0;
+  overflow: hidden;
 }
 
 .letra.active {
   display: block;
-  opacity: 1;
   max-height: 1000px;
+  opacity: 1;
 }
 
-/* botão de letra */
-button.letra-btn {
-  background: #175A43;  /* marrom */
-  color: #fff;
+/* -------------------------------
+   BOTÕES
+---------------------------------*/
+button, button.letra-btn, .ponto audio + button {
+  font-size: clamp(12px, 1vw, 16px);
+  padding: clamp(0.4rem, 1vw, 0.8rem) clamp(0.6rem, 2vw, 1rem);
   border: none;
-  padding: 6px 12px;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s;
 }
 
-button.letra-btn:hover {
-  background: #aef4dd; /* marrom mais claro */
+button.letra-btn {
+  background: #175A43;
+  color: #fff;
 }
 
-/* botão de áudio continua verde */
+button.letra-btn:hover {
+  background: #4c9079;
+}
+
 .ponto audio + button {
-  background: #0f3d2e; /* verde */
+  background: #0f3d2e;
+  color: #fff;
 }
 
 .ponto audio + button:hover {
@@ -66,9 +79,9 @@ button.letra-btn:hover {
 ---------------------------------*/
 h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 3rem;
+  font-size: clamp(2.2rem, 5vw, 3rem);
   margin-bottom: 2rem;
-  color: #15553F;
+  color: #3a2f26;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
@@ -77,24 +90,25 @@ h1 {
 ---------------------------------*/
 nav.menu {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
-  padding: 0.5rem 0;
+  justify-content: center;
+  gap: clamp(0.5rem, 1vw, 1rem);
+  padding: clamp(0.4rem, 1vw, 0.5rem) 0;
   position: sticky;
   top: 1rem;
   z-index: 10;
 }
 
 nav.menu a {
+  flex: 1 1 120px;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
   color: #fff;
   text-decoration: none;
-  padding: 0.6rem 1.5rem;
+  padding: clamp(0.4rem, 1vw, 0.6rem) clamp(0.8rem, 2vw, 1.5rem);
   border-radius: 12px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.2);
   transition: all 0.4s ease;
@@ -106,7 +120,7 @@ nav.menu a::before {
   font-size: 1.2rem;
 }
 
-/* Gradientes individuais por botão do menu principal */
+/* Gradientes individuais por botão */
 nav.menu a:nth-child(1) { background: linear-gradient(145deg, #0f3d2e, #17684c); }
 nav.menu a:nth-child(2) { background: linear-gradient(145deg, #134d39, #1b6f52); }
 nav.menu a:nth-child(3) { background: linear-gradient(145deg, #0e5c44, #1c8562); }
@@ -122,10 +136,10 @@ nav.menu a:hover {
    CARDS / LINHAS
 ---------------------------------*/
 .linha {
-  margin-bottom: 25px;
+  margin-bottom: 2rem;
   border: 2px solid #175A43;
   border-radius: 10px;
-  padding: 15px;
+  padding: clamp(1rem, 2vw, 1.5rem);
   box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -137,33 +151,33 @@ nav.menu a:hover {
 
 .linha h2 {
   font-weight: bold;
-  font-size: 22px;
-  margin-bottom: 15px;
+  font-size: clamp(18px, 2vw, 22px);
+  margin-bottom: 1rem;
   color: #175A43;
 }
 
 /* -------------------------------
-   ENTIDADES MODERNIZADAS - BOTÕES MARRONS
+   ENTIDADES
 ---------------------------------*/
 .entidade {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .entidade h3 {
   font-weight: 600;
-  font-size: 18px;
+  font-size: clamp(16px, 1.5vw, 18px);
   margin: 0; 
-  padding: 12px 20px;
-  background: linear-gradient(145deg, #7cbba6, #aef4dd); /* marrom suave */
-  border-left: 5px solid #175A43; /* borda escura */
+  padding: clamp(0.6rem, 1.5vw, 1rem) clamp(1rem, 2vw, 1.5rem);
+  background: linear-gradient(145deg, #7cbba6, #4c9079);
+  border-left: 5px solid #175A43;
   border-radius: 12px;
   cursor: pointer;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   box-shadow: inset 0 -2px 4px rgba(0,0,0,0.1), 0 3px 8px rgba(0,0,0,0.15);
   transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .entidade h3:hover {
@@ -176,7 +190,7 @@ nav.menu a:hover {
   content: '▼';
   font-size: 14px;
   transition: transform 0.3s ease;
-  color: #5A9C86;
+  color: #5b3e2b;
 }
 
 .entidade.active h3::after {
@@ -184,10 +198,10 @@ nav.menu a:hover {
 }
 
 /* -------------------------------
-   PONTOS COM ANIMAÇÃO
+   PONTOS
 ---------------------------------*/
 .pontos {
-  display: none; /* inicialmente escondido */
+  display: none;
   opacity: 0;
   max-height: 0;
   overflow: hidden;
@@ -195,7 +209,7 @@ nav.menu a:hover {
   background: #f9f5f0;
   border-left: 3px solid #175A43;
   border-radius: 0 0 12px 12px;
-  padding: 10px 15px;
+  padding: clamp(0.5rem, 1vw, 1rem);
 }
 
 .pontos.active {
@@ -205,8 +219,8 @@ nav.menu a:hover {
 }
 
 .ponto {
-  margin-bottom: 12px;
-  padding: 8px 12px;
+  margin-bottom: 0.8rem;
+  padding: clamp(0.5rem, 1vw, 0.8rem);
   border-bottom: 1px solid #d1bfa9;
   text-align: left;
   border-radius: 6px;
@@ -221,34 +235,9 @@ nav.menu a:hover {
 
 .ponto strong {
   display: block;
-  margin-bottom: 5px;
-  font-size: 16px;
-  text-align: left;
-  color: #1A684D;
-}
-
-/* -------------------------------
-   LETRA DO PONTO
----------------------------------*/
-.letra {
-  display: none; /* inicialmente oculta */
-  background: #fdf0e0;
-  border-left: 3px solid #175A43;
-  border-radius: 6px;
-  padding: 10px;
-  margin-top: 8px;
-  white-space: pre-wrap;
-  line-height: 1.5;
-  color: #5A9C86;
-  transition: max-height 0.4s ease, opacity 0.4s ease;
-  max-height: 0;
-  overflow: hidden;
-}
-
-.letra.active {
-  display: block;
-  max-height: 800px;
-  opacity: 1;
+  margin-bottom: 0.3rem;
+  font-size: clamp(14px, 1.2vw, 16px);
+  color: #5b3e2b;
 }
 
 /* -------------------------------
@@ -272,33 +261,14 @@ a:hover {
 ---------------------------------*/
 audio {
   width: 100%;
-  margin-bottom: 5px;
-}
-
-/* -------------------------------
-   BUTTONS (áudio / ver letra)
----------------------------------*/
-button {
-  background: #175A43;
-  color: #fff;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-button:hover {
-  background: #14503d;
+  margin-bottom: 0.5rem;
 }
 
 /* -------------------------------
    RESPONSIVO
 ---------------------------------*/
-@media (max-width: 600px) {
-  body { padding: 1rem; }
-  h1 { font-size: 2.2rem; }
-  nav.menu { flex-direction: column; gap: 0.8rem; }
-  nav.menu a { font-size: 0.95rem; padding: 0.6rem 1rem; justify-content: center; }
-  li, .ponto { font-size: 0.95rem; padding: 0.6rem 1rem; }
-}
+@media (max-width: 1200px) { html { font-size: 95%; } }
+@media (max-width: 992px)  { html { font-size: 90%; } }
+@media (max-width: 768px)  { html { font-size: 85%; } }
+@media (max-width: 576px)  { html { font-size: 80%; } }
+@media (max-width: 400px)  { html { font-size: 75%; } }
