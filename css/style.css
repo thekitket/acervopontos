@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #0f3d2e;
+  margin: 0;
+}
+
+nav.menu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background: #0f3d2e;
+  padding: 12px 0;
+}
+
+nav.menu a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav.menu a:hover {
+  color: #a1d9b1;
+}
+
+.main-content {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.search-box {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  margin-bottom: 30px;
+  border: 2px solid #0f3d2e;
+  border-radius: 8px;
+}
+
+/* LINHAS E ENTIDADES */
+.linha {
+  margin-bottom: 30px;
+}
+
+.linha h2 {
+  font-weight: bold;
+  font-size: 22px;
+  border-bottom: 3px solid #0f3d2e;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+
+.entidade h3 {
+  background: #e6f0ec;
+  padding: 10px 15px;
+  border-left: 5px solid #0f3d2e;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0;
+}
+
+.pontos {
+  display: none;
+  padding: 10px 20px;
+  border-left: 2px solid #0f3d2e;
+  background: #f9fdfc;
+  border-radius: 0 5px 5px 0;
+}
+
+.ponto {
+  margin-bottom: 20px;
+}
+
+.ponto strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+audio {
+  display: block;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+button {
+  background: #0f3d2e;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #14503d;
+}
+
+.letra {
+  display: none;
+  margin-top: 10px;
+  white-space: pre-line;
+  line-height: 1.6;
+  background: #f0f7f4;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
