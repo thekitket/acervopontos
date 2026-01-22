@@ -81,7 +81,7 @@ nav.menu a:hover {
 ---------------------------------*/
 .linha {
   margin-bottom: 25px;
-  border: 2px solid #0f3d2e;
+  border: 2px solid #8b5e3c;
   border-radius: 10px;
   padding: 15px;
   box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
@@ -97,7 +97,7 @@ nav.menu a:hover {
   font-weight: bold;
   font-size: 22px;
   margin-bottom: 15px;
-  color: #0f3d2e;
+  color: #8b5e3c;
 }
 
 /* -------------------------------
@@ -237,7 +237,7 @@ audio {
    BUTTONS (áudio / ver letra)
 ---------------------------------*/
 button {
-  background: #0f3d2e;
+  background: #8b5e3c;
   color: #fff;
   border: none;
   padding: 6px 12px;
