@@ -4,7 +4,7 @@ const acervoJurema = [
     entidades: [
       {
 
-         nome: "Mestre Cagaruço",
+         nome: "Mestre Cagaruçu",
         pontos: [
           {titulo:"Chapéu Amarelo...", audio:"audios/jurema/mestre/01-mestre-ze-pelintra", letra: "Chapéu amarelo que vem do Pará (2x) / Seu Zé vem Triunfando na mesa real"},
           {titulo:"Outro Ponto", audio:"assets/audio/jurema/mestres/outro", letra:"Letra do outro ponto..."},
@@ -12,6 +12,14 @@ const acervoJurema = [
       },
       {
  nome: "Mestre Zé de Santana",
+        pontos: [
+          {titulo:"Chapéu Amarelo...", audio:"audios/jurema/mestre/01-mestre-ze-pelintra", letra: "Chapéu amarelo que vem do Pará (2x) / Seu Zé vem Triunfando na mesa real"},
+          {titulo:"Outro Ponto", audio:"assets/audio/jurema/mestres/outro", letra:"Letra do outro ponto..."},
+
+         ]
+      },
+      {
+ nome: "Mestre Zé Bebinho",
         pontos: [
           {titulo:"Chapéu Amarelo...", audio:"audios/jurema/mestre/01-mestre-ze-pelintra", letra: "Chapéu amarelo que vem do Pará (2x) / Seu Zé vem Triunfando na mesa real"},
           {titulo:"Outro Ponto", audio:"assets/audio/jurema/mestres/outro", letra:"Letra do outro ponto..."},
