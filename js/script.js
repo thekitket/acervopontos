@@ -1,18 +1,30 @@
-function toggleLetra(id){
+// -------------------------------
+// FUNÇÕES DE TOGGLE
+// -------------------------------
+function toggleLetra(id) {
   const l = document.getElementById(id);
-  if(l) l.style.display = l.style.display === "none" ? "block" : "none";
+  if (!l) return;
+
+  const isVisible = l.style.display === "block";
+  l.style.display = isVisible ? "none" : "block";
 }
 
-function toggleEntidade(id){
+function toggleEntidade(id) {
   const e = document.getElementById(id);
-  if(e) e.style.display = e.style.display === "none" ? "block" : "none";
+  if (!e) return;
+
+  e.classList.toggle("active");
 }
 
-function renderAcervo(acervo, containerId){
+// -------------------------------
+// RENDERIZAÇÃO DO ACERVO
+// -------------------------------
+function renderAcervo(acervo, containerId) {
   const container = document.getElementById(containerId);
-  if(!container) return;
+  if (!container) return;
 
   container.innerHTML = "";
+
   acervo.forEach((linha, linhaIdx) => {
     const sec = document.createElement("section");
     sec.className = "linha";
@@ -21,8 +33,12 @@ function renderAcervo(acervo, containerId){
     linha.entidades.forEach((entidade, entIdx) => {
       const div = document.createElement("div");
       div.className = "entidade";
+
       const pontosId = `linha${linhaIdx}-entidade${entIdx}`;
-      div.innerHTML = `<h3 onclick="toggleEntidade('${pontosId}')">${entidade.nome}</h3><div class="pontos" id="${pontosId}"></div>`;
+      div.innerHTML = `
+        <h3>${entidade.nome}</h3>
+        <div class="pontos" id="${pontosId}"></div>
+      `;
 
       const pontosContainer = div.querySelector(".pontos");
       entidade.pontos.forEach((ponto, pIdx) => {
@@ -42,6 +58,10 @@ function renderAcervo(acervo, containerId){
         pontosContainer.appendChild(pontoDiv);
       });
 
+      // Evento para mostrar/ocultar pontos
+      const titulo = div.querySelector("h3");
+      titulo.addEventListener("click", () => toggleEntidade(pontosId));
+
       sec.appendChild(div);
     });
 
@@ -49,26 +69,12 @@ function renderAcervo(acervo, containerId){
   });
 }
 
-function searchPontos(){
+// -------------------------------
+// SEARCH
+// -------------------------------
+function searchPontos() {
   const term = document.getElementById("search").value.toLowerCase();
   document.querySelectorAll(".ponto").forEach(p => {
     p.style.display = p.innerText.toLowerCase().includes(term) ? "block" : "none";
   });
 }
-<script>
-  // Seleciona todas as entidades
-  const entidades = document.querySelectorAll('.entidade');
-
-  entidades.forEach(entidade => {
-    const titulo = entidade.querySelector('h3');
-    const pontos = entidade.querySelector('.pontos');
-
-    titulo.addEventListener('click', () => {
-      // Alterna a classe active na entidade e nos pontos
-      entidade.classList.toggle('active');
-      pontos.classList.toggle('active');
-    });
-  });
-<script src="script.js"></script>
-
-</script>
