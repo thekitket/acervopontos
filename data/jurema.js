@@ -67,6 +67,18 @@ const acervoJurema = [
       { nome: "Mestra Luziaria", pontos: [
           {titulo:"Ponto 01", audio:"audios/jurema/mestra/XXXXXXXXX", letra:"Letra do ponto..."},
           {titulo:"Ponto 02", audio:"audios/jurema/mestra/XXXXXXXXX", letra:"Letra do ponto..."},
+         ] },
+      { nome: "Mestra Ritinha", pontos: [
+          {titulo:"Ponto 01", audio:"audios/jurema/mestra/XXXXXXXXX", letra:"Letra do ponto..."},
+          {titulo:"Ponto 02", audio:"audios/jurema/mestra/XXXXXXXXX", letra:"Letra do ponto..."},
+          ] },
+      { nome: "Mestra Maria Elisa", pontos: [
+          {titulo:"Ponto 01", audio:"audios/jurema/mestra/XXXXXXXXX", letra:"Letra do ponto..."},
+          {titulo:"Ponto 02", audio:"audios/jurema/mestra/XXXXXXXXX", letra:"Letra do ponto..."},
+          ] },
+      { nome: "Mestra Paulina", pontos: [
+          {titulo:"Ponto 01", audio:"audios/jurema/mestra/XXXXXXXXX", letra:"Letra do ponto..."},
+          {titulo:"Ponto 02", audio:"audios/jurema/mestra/XXXXXXXXX", letra:"Letra do ponto..."},
       ] }
     ]
   },
@@ -115,7 +127,7 @@ const acervoJurema = [
           {titulo:"Ponto 01", audio:"audios/jurema/caboclas/XXXXXXXX", letra:"Letra do ponto..."},
           {titulo:"Ponto 02", audio:"audios/jurema/caboclas/XXXXXXXX", letra:"Letra do ponto..."},
       ] },
-      { nome: "Caboclo Itacuira", pontos: [
+      { nome: "Cabocla Itacuira", pontos: [
           {titulo:"Ponto 01", audio:"audios/jurema/caboclas/XXXXXXXX", letra:"Letra do ponto..."},
           {titulo:"Ponto 02", audio:"audios/jurema/caboclas/XXXXXXXX", letra:"Letra do ponto..."},
       ] },
