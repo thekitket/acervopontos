@@ -55,3 +55,18 @@ function searchPontos(){
     p.style.display = p.innerText.toLowerCase().includes(term) ? "block" : "none";
   });
 }
+<script>
+  // Seleciona todas as entidades
+  const entidades = document.querySelectorAll('.entidade');
+
+  entidades.forEach(entidade => {
+    const titulo = entidade.querySelector('h3');
+    const pontos = entidade.querySelector('.pontos');
+
+    titulo.addEventListener('click', () => {
+      // Alterna a classe active na entidade e nos pontos
+      entidade.classList.toggle('active');
+      pontos.classList.toggle('active');
+    });
+  });
+</script>
