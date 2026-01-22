@@ -99,7 +99,7 @@ const acervoJurema = [
   { nome: "Ciganos",
    entidades: [
     { nome: "Pedro Cigano", pontos: [
-          {titulo:"Ponto 01", audio:"audios/jurema/cigano/XXXXXXXXX", letra:"Letra do ponto..."},
+          {titulo:"Ponto 01", audio:"audios/jurema/ciganos/01-ciganos-pedro-cigano", letra:"Letra do ponto..."},
           {titulo:"Ponto 0", audio:"audios/jurema/cigano/XXXXXXXXX", letra:"Letra do ponto..."},
   ] }
     ]
