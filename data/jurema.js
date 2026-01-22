@@ -126,9 +126,39 @@ const acervoJurema = [
     nome: "Caboclos",
     entidades: [
       {
-        nome: "Caboclo da Jurema",
+        nome: "Caboclo Sete Flecha",
         pontos: [
-          {titulo:"Caboclo da Mata", audio:"assets/audio/jurema/caboclos/caboclo-da-mata", letra:"Ele vem da mata..."}
+          {titulo:"Ponto 01", audio:"audios/jurema/caboclos/XXXXXXXX", letra:"Letra do ponto..."}
+          {titulo:"Ponto 02", audio:"audios/jurema/caboclos/XXXXXXXX", letra:"Letra do ponto..."},
+   ]
+      },
+      {
+         nome: "Caboclo Cobra Coral",
+        pontos: [
+          {titulo:"Ponto 01", audio:"audios/jurema/caboclos/XXXXXXXX", letra:"Letra do ponto..."}
+          {titulo:"Ponto 02", audio:"audios/jurema/caboclos/XXXXXXXX", letra:"Letra do ponto..."},
+           ]
+      },
+      {
+         nome: "Caboclo Pena Branca",
+        pontos: [
+          {titulo:"Ponto 01", audio:"audios/jurema/caboclos/XXXXXXXX", letra:"Letra do ponto..."}
+          {titulo:"Ponto 02", audio:"audios/jurema/caboclos/XXXXXXXX", letra:"Letra do ponto..."},
+           ]
+      },
+      {
+         nome: "Caboclo Arranca Toco",
+        pontos: [
+          {titulo:"Ponto 01", audio:"audios/jurema/caboclos/XXXXXXXX", letra:"Letra do ponto..."}
+          {titulo:"Ponto 02", audio:"audios/jurema/caboclos/XXXXXXXX", letra:"Letra do ponto..."},
+           ]
+      },
+      {
+         nome: "Caboclo Roxo",
+        pontos: [
+          {titulo:"Ponto 01", audio:"audios/jurema/caboclos/XXXXXXXX", letra:"Letra do ponto..."}
+          {titulo:"Ponto 02", audio:"audios/jurema/caboclos/XXXXXXXX", letra:"Letra do ponto..."},
+        
         ]
       }
     ]
