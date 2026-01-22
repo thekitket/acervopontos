@@ -44,7 +44,6 @@ nav.menu {
   z-index: 10;
 }
 
-/* Botões do menu */
 nav.menu a {
   display: flex;
   align-items: center;
@@ -60,27 +59,17 @@ nav.menu a {
   position: relative;
 }
 
-/* Ícone de pasta antes do texto */
 nav.menu a::before {
   content: '📁';
   font-size: 1.2rem;
 }
 
 /* Gradientes individuais por botão */
-nav.menu a:nth-child(1) {
-  background: linear-gradient(145deg, #0f3d2e, #17684c);
-}
-nav.menu a:nth-child(2) {
-  background: linear-gradient(145deg, #134d39, #1b6f52);
-}
-nav.menu a:nth-child(3) {
-  background: linear-gradient(145deg, #0e5c44, #1c8562);
-}
-nav.menu a:nth-child(4) {
-  background: linear-gradient(145deg, #0b4532, #15714d);
-}
+nav.menu a:nth-child(1) { background: linear-gradient(145deg, #0f3d2e, #17684c); }
+nav.menu a:nth-child(2) { background: linear-gradient(145deg, #134d39, #1b6f52); }
+nav.menu a:nth-child(3) { background: linear-gradient(145deg, #0e5c44, #1c8562); }
+nav.menu a:nth-child(4) { background: linear-gradient(145deg, #0b4532, #15714d); }
 
-/* Hover sofisticado */
 nav.menu a:hover {
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 8px 20px rgba(0,0,0,0.4), 0 0 10px rgba(161, 217, 177, 0.5);
@@ -141,7 +130,6 @@ nav.menu a:hover {
   box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
 
-/* Indicador toggle */
 .entidade h3::after {
   content: '▼';
   font-size: 14px;
@@ -156,12 +144,7 @@ nav.menu a:hover {
    PONTOS COM ANIMAÇÃO
 ---------------------------------*/
 .pontos {
-  display: none;
-  margin-top: 8px;
-  padding: 10px 15px;
-  background: #f9fdfc;
-  border-left: 3px solid #0f3d2e;
-  border-radius: 0 0 10px 10px;
+  display: block; /* mantido block mas inicial invisível para transição */
   opacity: 0;
   max-height: 0;
   overflow: hidden;
@@ -169,7 +152,6 @@ nav.menu a:hover {
 }
 
 .pontos.active {
-  display: block;
   opacity: 1;
   max-height: 1000px;
 }
@@ -234,18 +216,6 @@ button {
 
 button:hover {
   background: #14503d;
-}
-.pontos {
-  display: none;
-  opacity: 0;
-  max-height: 0;
-  transition: all 0.5s ease;
-}
-
-.pontos.active {
-  display: block;
-  opacity: 1;
-  max-height: 1000px;
 }
 
 /* -------------------------------
