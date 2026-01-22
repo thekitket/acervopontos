@@ -1,14 +1,66 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #fff;
-  color: #0f3d2e;
+/* -------------------------------
+   RESET E BASE
+---------------------------------*/
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
-nav.menu {
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 900px;
+  background: #fafafa;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* -------------------------------
+   TÍTULOS
+---------------------------------*/
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #3a2f26;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+  font-family: 'Merriweather', serif;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #0f3d2e;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  background: #e6f0ec;
+  border-left: 5px solid #0f3d2e;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+/* -------------------------------
+   NAVEGAÇÃO
+---------------------------------*/
+nav.menu, nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 1rem;
+  margin-bottom: 3rem;
   background: #0f3d2e;
   padding: 12px 0;
   position: sticky;
@@ -16,28 +68,34 @@ nav.menu {
   z-index: 10;
 }
 
-nav.menu a {
+nav a {
+  padding: 0.6rem 1.2rem;
+  background: #6b4c3b;
   color: #fff;
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
-  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
 }
 
-nav.menu a:hover {
-  color: #a1d9b1;
+nav a:hover {
+  background: #8b6a53;
+  transform: translateY(-2px);
 }
 
-.main-content {
+/* -------------------------------
+   MAIN CONTENT
+---------------------------------*/
+.main-content, main {
   max-width: 1000px;
   margin: 30px auto;
   padding: 0 20px;
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 25px;
-}
-
+/* -------------------------------
+   SEARCH BOX
+---------------------------------*/
 .search-box {
   display: block;
   width: 100%;
@@ -48,7 +106,9 @@ h1 {
   border-radius: 10px;
 }
 
-/* CARD LINHAS */
+/* -------------------------------
+   CARDS LINHA
+---------------------------------*/
 .linha {
   margin-bottom: 25px;
   border: 2px solid #0f3d2e;
@@ -57,27 +117,11 @@ h1 {
   box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
 
-.linha h2 {
-  font-weight: bold;
-  font-size: 22px;
-  margin-bottom: 15px;
-  color: #0f3d2e;
-}
-
-/* ENTIDADES */
+/* -------------------------------
+   ENTIDADES E PONTOS
+---------------------------------*/
 .entidade {
   margin-bottom: 15px;
-}
-
-.entidade h3 {
-  font-weight: bold;
-  font-size: 18px;
-  margin: 0;
-  padding: 10px 15px;
-  background: #e6f0ec;
-  border-left: 5px solid #0f3d2e;
-  cursor: pointer;
-  border-radius: 5px;
 }
 
 .pontos {
@@ -101,24 +145,6 @@ h1 {
   font-size: 16px;
 }
 
-audio {
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-button {
-  background: #0f3d2e;
-  color: #fff;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #14503d;
-}
-
 .letra {
   display: none;
   margin-top: 8px;
@@ -128,78 +154,72 @@ button:hover {
   white-space: pre-line;
   line-height: 1.5;
 }
+
+/* -------------------------------
+   LISTAS
+---------------------------------*/
+li {
+  background: #fffaf0;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0;
+  border-left: 5px solid #6b4c3b;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* -------------------------------
+   LINKS
+---------------------------------*/
 a {
   color: #6b4c3b;
   text-decoration: none;
-  transition: color 0.3s;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  transition: color 0.3s, background 0.3s;
 }
+
 a:hover {
   color: #a67c52;
+  background: #f0e6de;
 }
-h1 { font-family: 'Merriweather', serif; font-size: 2.5rem; margin-bottom: 1rem; }
-h2, h3 { font-family: 'Merriweather', serif; margin-top: 2rem; }
-p, li { font-family: 'Open Sans', sans-serif; line-height: 1.6; color: #333; }
-body { padding: 2rem; max-width: 900px; margin: auto; }
-section { margin-bottom: 3rem; }
-a { padding: 0.2rem 0.4rem; border-radius: 4px; }
-a:hover { background: #f0e6de; }
-h1 { text-align: center; text-shadow: 1px 1px 2px rgba(0,0,0,0.1); }
-li { background: #fffaf0; padding: 0.5rem 1rem; margin: 0.3rem 0; border-left: 4px solid #6b4c3b; }
-li:hover { box-shadow: 0 2px 5px rgba(0,0,0,0.1); transform: translateY(-2px); transition: 0.3s; }
-body { padding: 1rem; }
-h1 { font-size: 2rem; }
-li { font-size: 1rem; }
-body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0 auto;
-  padding: 2rem;
-  max-width: 900px;
-  background: #fafafa;
-  color: #222;
+
+/* -------------------------------
+   AUDIO
+---------------------------------*/
+audio {
+  width: 100%;
+  margin-bottom: 5px;
 }
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.8rem;
-  margin-bottom: .5rem;
-  text-align: center;
-  color: #3a2f26;
-}
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-nav a {
-  padding: .6rem 1.2rem;
-  background: #6b4c3b;
+
+/* -------------------------------
+   BUTTON
+---------------------------------*/
+button {
+  background: #0f3d2e;
   color: #fff;
-  text-decoration: none;
+  border: none;
+  padding: 6px 12px;
   border-radius: 4px;
-  font-weight: 600;
-  transition: background .3s;
+  cursor: pointer;
+  transition: all 0.3s;
 }
-nav a:hover {
-  background: #8b6a53;
+
+button:hover {
+  background: #14503d;
 }
-main {
-  padding-top: 2rem;
-}
-p {
-  margin-top: 1.2rem;
-  line-height: 1.7;
-  font-size: 1.1rem;
-}
-body {
-  padding: 1rem;
-}
-h1 {
-  font-size: 2.2rem;
-}
-nav a {
-  padding: .5rem .9rem;
-  font-size: .9rem;
-}
-nav a {
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+/* -------------------------------
+   RESPONSIVO
+---------------------------------*/
+@media (max-width: 600px) {
+  body { padding: 1rem; }
+  h1 { font-size: 2.2rem; }
+  nav a { padding: .5rem .9rem; font-size: .9rem; }
+  li { font-size: 1rem; }
 }
