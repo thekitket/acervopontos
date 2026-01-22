@@ -15,6 +15,17 @@ function toggleEntidade(id) {
 
   e.classList.toggle("active");
 }
+function toggleLetra(id) {
+  const l = document.getElementById(id);
+  if (!l) return;
+
+  const isVisible = l.style.display === "block";
+  if (isVisible) {
+    l.style.display = "none";
+  } else {
+    l.style.display = "block";
+  }
+}
 
 // -------------------------------
 // RENDERIZAÇÃO DO ACERVO
