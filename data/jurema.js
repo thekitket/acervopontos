@@ -16,6 +16,23 @@ const acervoJurema = [
           {titulo:"Do Pina...", audio:"audios/jurema/mestre/01-mestre-quebra-pedra", letra:"Do Pina a Boa Viagem"},
           {titulo:"Outro Ponto", audio:"assets/audio/jurema/mestres/outro", letra:"Letra do outro ponto..."},
           {titulo:"Outro Ponto 2", audio:"assets/audio/jurema/mestres/outro2", letra:"Letra do outro ponto 2..."}
+
+         ]
+      },
+      {
+        nome: "Mestre Manoel da Serra",
+        pontos: [
+          {titulo:"Do Pina...", audio:"audios/jurema/mestre/01-mestre-quebra-pedra", letra:"Do Pina a Boa Viagem"},
+          {titulo:"Outro Ponto", audio:"assets/audio/jurema/mestres/outro", letra:"Letra do outro ponto..."},
+          {titulo:"Outro Ponto 2", audio:"assets/audio/jurema/mestres/outro2", letra:"Letra do outro ponto 2..."}
+           ]
+      },
+      {
+        nome: "Mestre Manoel Paturi",
+        pontos: [
+          {titulo:"Do Pina...", audio:"audios/jurema/mestre/01-mestre-quebra-pedra", letra:"Do Pina a Boa Viagem"},
+          {titulo:"Outro Ponto", audio:"assets/audio/jurema/mestres/outro", letra:"Letra do outro ponto..."},
+          {titulo:"Outro Ponto 2", audio:"assets/audio/jurema/mestres/outro2", letra:"Letra do outro ponto 2..."}
         ]
       }
     ]
