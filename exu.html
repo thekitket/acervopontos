@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Acervo de Pontos - Exu / Pombo Gira</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="menu">
+  <a href="index.html">Início</a>
+  <a href="jurema.html">Jurema</a>
+</nav>
+
+<div class="main-content">
+  <h1>Acervo de Pontos - Exu / Pombo Gira</h1>
+  <input type="text" id="search" class="search-box" placeholder="Buscar ponto..." onkeyup="searchPontos()">
+  <div id="conteudo"></div>
+</div>
+
+<script src="data/exu.js"></script>
+<script src="js/script.js"></script>
+<script>
+renderAcervo(acervoExu,"conteudo");
+</script>
+
+</body>
+</html>
