@@ -181,7 +181,7 @@ nav.menu a:hover {
 }
 
 .entidade h3:hover {
-  background: linear-gradient(145deg, #e0c9aa, #c79a7d);
+  background: linear-gradient(145deg, #dbf5dd, #cbecce);
   transform: translateY(-2px);
   box-shadow: inset 0 -2px 6px rgba(0,0,0,0.15), 0 6px 12px rgba(0,0,0,0.25);
 }
