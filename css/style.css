@@ -64,7 +64,7 @@ nav.menu a::before {
   font-size: 1.2rem;
 }
 
-/* Gradientes individuais por botão do menu */
+/* Gradientes individuais por botão do menu principal */
 nav.menu a:nth-child(1) { background: linear-gradient(145deg, #0f3d2e, #17684c); }
 nav.menu a:nth-child(2) { background: linear-gradient(145deg, #134d39, #1b6f52); }
 nav.menu a:nth-child(3) { background: linear-gradient(145deg, #0e5c44, #1c8562); }
@@ -112,12 +112,12 @@ nav.menu a:hover {
   font-size: 18px;
   margin: 0;
   padding: 12px 20px;
-  background: linear-gradient(145deg, #e6d5c0, #d4b89e); /* marrom */
+  background: linear-gradient(145deg, #f2e6d9, #d4b89e); /* gradiente marrom suave */
   border-left: 5px solid #8b5e3c; /* borda escura */
   border-radius: 12px;
   cursor: pointer;
   text-align: left;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  box-shadow: inset 0 -2px 4px rgba(0,0,0,0.1), 0 3px 8px rgba(0,0,0,0.15);
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
@@ -125,15 +125,16 @@ nav.menu a:hover {
 }
 
 .entidade h3:hover {
-  background: linear-gradient(145deg, #d4b89e, #c79a7d);
+  background: linear-gradient(145deg, #e0c9aa, #c79a7d);
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  box-shadow: inset 0 -2px 6px rgba(0,0,0,0.15), 0 6px 12px rgba(0,0,0,0.25);
 }
 
 .entidade h3::after {
   content: '▼';
   font-size: 14px;
   transition: transform 0.3s ease;
+  color: #5b3e2b; /* contraste com o marrom */
 }
 
 .entidade.active h3::after {
@@ -149,6 +150,10 @@ nav.menu a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.5s ease;
+  background: #f9f5f0; /* fundo neutro para os pontos */
+  border-left: 3px solid #8b5e3c;
+  border-radius: 0 0 12px 12px;
+  padding: 10px 15px;
 }
 
 .pontos.active {
@@ -159,14 +164,15 @@ nav.menu a:hover {
 .ponto {
   margin-bottom: 12px;
   padding: 8px 12px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #d1bfa9;
   text-align: left;
   border-radius: 6px;
   transition: background 0.3s, transform 0.3s;
+  background: #fdf7f0;
 }
 
 .ponto:hover {
-  background: #eef7f2;
+  background: #f4ebdd;
   transform: translateX(2px);
 }
 
@@ -175,6 +181,7 @@ nav.menu a:hover {
   margin-bottom: 5px;
   font-size: 16px;
   text-align: left;
+  color: #5b3e2b;
 }
 
 /* -------------------------------
@@ -205,7 +212,7 @@ audio {
    BUTTON
 ---------------------------------*/
 button {
-  background: #0f3d2e;
+  background: #0f3d2e; /* mantém verde dos botões de áudio/letra */
   color: #fff;
   border: none;
   padding: 6px 12px;
