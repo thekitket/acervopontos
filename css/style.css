@@ -18,6 +18,29 @@ body {
   text-align: center;
   transition: background 0.3s, color 0.3s;
 }
+/* botão de letra */
+button.letra-btn {
+  background: #8b5e3c;  /* marrom */
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button.letra-btn:hover {
+  background: #a17453; /* marrom mais claro */
+}
+
+/* botão de áudio continua verde */
+.ponto audio + button {
+  background: #0f3d2e; /* verde */
+}
+
+.ponto audio + button:hover {
+  background: #14503d;
+}
 
 /* -------------------------------
    TÍTULO PRINCIPAL
