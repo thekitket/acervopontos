@@ -21,7 +21,7 @@ const acervoJurema = [
       ] },
       { nome: "Mestre Manoel Quebra Pedra", pontos: [
           {titulo:"Qyebra Pedra Meu Mestre por onde Você Andou...", audio:"audios/jurema/mestre/1-mestre-manoel-quebra-pedra", letra:"Letra do ponto..."},
-          {titulo:"Ponto 02", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
+          {titulo:"Do Pina à Boa Viagem...", audio:"audios/jurema/mestre/2-mestre-manoel-quebra-pedra", letra:"Letra do ponto..."},
       ] },
       { nome: "Mestre Nego Gerso", pontos: [
           {titulo:"Ponto 01", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
