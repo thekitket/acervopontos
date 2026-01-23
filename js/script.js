@@ -55,6 +55,8 @@ function renderAcervo(acervo, containerId) {
           <audio controls>
             <source src="${ponto.audio}.mp3" type="audio/mpeg">
             <source src="${ponto.audio}.ogg" type="audio/ogg">
+            <source src="${ponto.audio}.mpeg" type="audio/mpeg">
+
             Seu navegador não suporta áudio.
           </audio>
           <button onclick="toggleLetra('${letraId}')">Ver letra</button>
