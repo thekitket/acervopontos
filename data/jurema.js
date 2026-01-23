@@ -16,8 +16,8 @@ const acervoJurema = [
       { nome: "Mestre Manoel da Serra", pontos: [
           {titulo:"Ponto 01", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
       ] },
-      { nome: "Mestre Manoel Paturi", pontos: [
-          {titulo:"Ponto 01", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
+      { nome: "Mestre Zé Mulambo", pontos: [
+          {titulo:"Ponto 01", audio:"audios/jurema/mestre/1-mestre-ze -mulambo", letra:"Letra do ponto..."},
       ] },
       { nome: "Mestre Manoel Quebra Pedra", pontos: [
           {titulo:"Quebra Pedra Meu Mestre por onde Você Andou...", audio:"audios/jurema/mestre/1-mestre-manoel-quebra-pedra", letra:"Letra do ponto..."},
@@ -43,6 +43,8 @@ const acervoJurema = [
       ] },
       { nome: "Mestre Zé Pelintra", pontos: [
           {titulo:"Chapéu Amarelo...", audio:"audios/jurema/mestre/01-mestre-ze-pelintra", letra: "Chapéu amarelo que vem do Pará (2x) Seu Zé vem Triunfando na mesa real (2x) / Zé Pelintra, Zé Pelintra de Santana Ê (2x) / Deus lhe deu maior poder da maior força que tem (2x)"},
+          {titulo:"Chapéu Amarelo...", audio:"audios/jurema/mestre/2-mestre-ze-pelintra", letra: "Letra do ponto"},
+
       ] },
       { nome: "Mestre Zé Pereira", pontos: [
           {titulo:"Pereiro Brabo, pereiro brabo...", audio:"audios/jurema/mestre/01-Zé-Pereira", letra:"Pereiro Brabo (2x) Meu Pereiro Balançou..."},
