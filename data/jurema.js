@@ -45,7 +45,7 @@ const acervoJurema = [
           {titulo:"Chapéu Amarelo...", audio:"audios/jurema/mestre/01-mestre-ze-pelintra", letra: "Chapéu amarelo que vem do Pará (2x) Seu Zé vem Triunfando na mesa real (2x) / Zé Pelintra, Zé Pelintra de Santana Ê (2x) / Deus lhe deu maior poder da maior força que tem (2x)"},
       ] },
       { nome: "Mestre Zé Pereira", pontos: [
-          {titulo:"Ponto 01", audio:"audios/jurema/mestre/01-Zé-Pereira", letra:"Pereiro Brabo (2x) Meu Pereiro Balançou..."},
+          {titulo:"Pereiro Brabo, pereiro brabo...", audio:"audios/jurema/mestre/01-Zé-Pereira", letra:"Pereiro Brabo (2x) Meu Pereiro Balançou..."},
       ] },
       { nome: "Mestre Zé de Santana", pontos: [
           {titulo:"Ponto 01", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
