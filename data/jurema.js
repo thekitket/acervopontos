@@ -29,11 +29,9 @@ const acervoJurema = [
       ] },
       { nome: "Mestre Pilão Deitado", pontos: [
           {titulo:"Ponto 01", audio:"audios/jurema/mestre/01-pilao-deitado", letra:"Letra do ponto..."},
-          {titulo:"Ponto 02", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
       ] },
       { nome: "Mestre Zé Bebinho", pontos: [
           {titulo:"Eu abalei o meu Acais...", audio:"audios/jurema/mestre/1-mestre-ze-bebinho", letra:"Letra do ponto..."},
-          {titulo:"Ponto 02", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
       ] },
       { nome: "Mestre Zé Cego", pontos: [
           {titulo:"Ponto 01", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
@@ -45,11 +43,9 @@ const acervoJurema = [
       ] },
       { nome: "Mestre Zé Pelintra", pontos: [
           {titulo:"Chapéu Amarelo...", audio:"audios/jurema/mestre/01-mestre-ze-pelintra", letra: "Chapéu amarelo que vem do Pará (2x) Seu Zé vem Triunfando na mesa real (2x) / Zé Pelintra, Zé Pelintra de Santana Ê (2x) / Deus lhe deu maior poder da maior força que tem (2x)"},
-          {titulo:"Ponto 02", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
       ] },
       { nome: "Mestre Zé Pereira", pontos: [
           {titulo:"Ponto 01", audio:"audios/jurema/mestre/01-Zé-Pereira", letra:"Pereiro Brabo (2x) Meu Pereiro Balançou..."},
-          {titulo:"Ponto 02", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
       ] },
       { nome: "Mestre Zé de Santana", pontos: [
           {titulo:"Ponto 01", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
@@ -91,7 +87,6 @@ const acervoJurema = [
       ] },
       { nome: "Caboclo Cobra Coral", pontos: [
           {titulo:"Okê Caboclo, chama seu Cobra Coral...", audio:"audios/jurema/caboclos/1-caboclo-cobra-coral", letra:"Letra do ponto..."},
-          {titulo:"Ponto 02", audio:"audios/jurema/caboclos/XXXXXXXX", letra:"Letra do ponto..."},
       ] },
       { nome: "Caboclo Pena Branca", pontos: [
           {titulo:"Ponto 01", audio:"audios/jurema/caboclos/XXXXXXXX", letra:"Letra do ponto..."},
