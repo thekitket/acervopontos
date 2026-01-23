@@ -20,7 +20,7 @@ const acervoJurema = [
           {titulo:"Ponto 01", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
       ] },
       { nome: "Mestre Manoel Quebra Pedra", pontos: [
-          {titulo:"Ponto 01", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
+          {titulo:"Qyebra Pedra Meu Mestre por onde Você Andou...", audio:"audios/jurema/mestre/1-mestre-manoel-quebra-pedra", letra:"Letra do ponto..."},
           {titulo:"Ponto 02", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
       ] },
       { nome: "Mestre Nego Gerso", pontos: [
@@ -32,7 +32,7 @@ const acervoJurema = [
           {titulo:"Ponto 02", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
       ] },
       { nome: "Mestre Zé Bebinho", pontos: [
-          {titulo:"Ponto 01", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
+          {titulo:"Eu abalei o meu Acais...", audio:"audios/jurema/mestre/1-mestre-ze-bebinho", letra:"Letra do ponto..."},
           {titulo:"Ponto 02", audio:"audios/jurema/mestre/XXXXXXXXX", letra:"Letra do ponto..."},
       ] },
       { nome: "Mestre Zé Cego", pontos: [
@@ -90,7 +90,7 @@ const acervoJurema = [
           {titulo:"Ponto 02", audio:"audios/jurema/caboclos/XXXXXXXX", letra:"Letra do ponto..."},
       ] },
       { nome: "Caboclo Cobra Coral", pontos: [
-          {titulo:"Ponto 01", audio:"audios/jurema/caboclos/XXXXXXXX", letra:"Letra do ponto..."},
+          {titulo:"Okê Caboclo, chama seu Cobra Coral...", audio:"audios/jurema/caboclos/1-caboclo-cobra-coral", letra:"Letra do ponto..."},
           {titulo:"Ponto 02", audio:"audios/jurema/caboclos/XXXXXXXX", letra:"Letra do ponto..."},
       ] },
       { nome: "Caboclo Pena Branca", pontos: [
@@ -116,8 +116,9 @@ const acervoJurema = [
           {titulo:"Ponto 02", audio:"audios/jurema/caboclas/XXXXXXXX", letra:"Letra do ponto..."},
       ] },
       { nome: "Cabocla Jurema", pontos: [
-          {titulo:"Ponto 01", audio:"audios/jurema/caboclas/XXXXXXXX", letra:"Letra do ponto..."},
+          {titulo:"Moça bonita é a Cabocla Jurema...", audio:"audios/jurema/caboclas/1-cabocla-jurema", letra:"Letra do ponto..."},
           {titulo:"Ponto 02", audio:"audios/jurema/caboclas/XXXXXXXX", letra:"Letra do ponto..."},
+        
       ] },
       { nome: "Cabocla Iara", pontos: [
           {titulo:"Ponto 01", audio:"audios/jurema/caboclas/XXXXXXXX", letra:"Letra do ponto..."},
