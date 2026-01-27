@@ -255,6 +255,13 @@ a:hover {
   color: #a67c52;
   background: #f0e6de;
 }
+.rodape {
+  margin-top: 4rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #555;
+}
 
 /* -------------------------------
    AUDIO
